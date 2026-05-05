@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vandita Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Grotesk:wght@500;600;700;800;900&family=Satoshi:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <header class="topbar" id="topbar">
+    <div class="shell">
+      <div class="logo"> <img src="images/Vr logo.png" alt="Vandita Logo" /> </div>
+      <nav class="nav-links">
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero section-hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow reveal">BRANDING & DIGITAL EXPERIENCE</div>
+          <div class="headline-line reveal">Designing premium editorial web experiences for creative studios and visionaries.</div>
+          <p class="hero-support reveal">A signature portfolio that blends sharp geometry, rich texture, and fluid rhythm for captivating luxury brands.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow"></div>
+          <div class="rotating-badge">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <path id="circlePath" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0" />
+              </defs>
+              <text textLength="480">
+                <textPath xlink:href="#circlePath" startOffset="0">AVAILABLE FOR WORK • AVAILABLE FOR WORK•      </textPath>
+              </text>
+            </svg>
+            <div class="badge-core">
+              <img class="about-image" src="images/IMG_3820 (1).JPG" alt="About section illustration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="section-head">
+        <span class="section-label">Expertise</span>
+        <h2>Skills & Specialties</h2>
+      </div>
+      <div class="skills-marquee">
+  <div class="marquee-track">
+    <span>Motion Graphics</span>
+    <span>Visual Design</span>
+    <span>Graphic Design</span>
+    <span>Illustration</span>
+    <span>UI/UX Design</span>
+    <span>Brand Identity</span>
+
+    <!-- Duplicate for smooth loop -->
+    <span>Motion Graphics</span>
+    <span>Visual Design</span>
+    <span>Graphic Design</span>
+    <span>Illustration</span>
+    <span>UI/UX Design</span>
+    <span>Brand Identity</span>
+  </div>
+</div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-head">
+        <span class="section-label">Project Showcase</span>
+        <h2>Selected work with editorial precision.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/Vandita_Rana_4811_A2.jpg" alt="Graphic Design" />
+            <button type="button" class="view-btn" data-project="1">View Project</button>
+          </div>
+          <div class="project-copy">
+            <h3>Vector Art</h3>
+            <span>Graphic Design</span>
+            <p class="project-description">Precision vector illustrations combining geometric forms with refined typography. This project showcases bold visual narratives through minimalist digital art.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/Style_Tile.png" alt="Style Tile" />
+            <button type="button" class="view-btn" data-project="2">View Project</button>
+          </div>
+          <div class="project-copy">
+            <h3>Style Tile</h3>
+            <span>Brand Identity</span>
+            <p class="project-description">A comprehensive visual system defining color palettes, typography hierarchies, and component states. Designed for seamless integration across digital touchpoints.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/UHN Design system.png" alt="Studio Identity project preview" />
+            <button type="button" class="view-btn" data-project="3">View Project</button>
+          </div>
+          <div class="project-copy">
+            <h3>Studio Identity</h3>
+            <span>Visual system</span>
+            <p class="project-description">An extensible design system with modular components, accessibility standards, and motion guidelines. Built for scalability across enterprise applications.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/Homepage wireframe.png" alt="Truvoye Wireframe Interface project preview" />
+            <button type="button" class="view-btn" data-project="4">View Project</button>
+          </div>
+          <div class="project-copy">
+            <h3>Truvvoye Wireframe Interface</h3>
+            <span>Web design</span>
+            <p class="project-description">High-fidelity interface wireframes prioritizing user flow and information hierarchy. Detailed specifications for responsive behavior and interactive states.</p>
+          </div>
+        </article>
+      </div>
+
+    <div class="project-modal" id="projectModal">
+      <div class="modal-content">
+        <button type="button" class="modal-close">×</button>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="" />
+          <div class="modal-text">
+            <h2 id="modalTitle"></h2>
+            <span id="modalCategory" class="modal-category"></span>
+            <p id="modalDescription" class="modal-description"></p>
+            <a href="projects-details.html" class="btn btn-primary">Explore Details</a>
+          <button type="button" class="btn btn-outline modal-back">Back to portfolio</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-grid reveal">
+        <div class="about-intro">
+          <span class="section-label">About</span>
+          <h1>Vandita Rana</h1>
+          <h2>Crafting timeless digital narratives.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I am a UI/UX Designer with a background in animation and web design. I enjoy creating intuitive and visually appealing digital experiences that solve real user problems.</p>
+          <p>My toolkit includes Figma, Adobe Illustrator, Photoshop, InDesign, After Effects, and Premiere Pro. I use these tools to craft polished brand systems, motion-rich interfaces, and refined visual storytelling.</p>
+          <div class="stats-row">
+            <div class="skill-item skill-figma" aria-label="Figma logo">
+              <img class="skill-logo" src="images/figma-logo-real.svg" alt="Figma logo" />
+            </div>
+            <div class="skill-item skill-ai" aria-label="Adobe Illustrator logo">
+              <img class="skill-logo" src="images/illustrator-logo-real.svg" alt="Adobe Illustrator logo" />
+            </div>
+            <div class="skill-item skill-ps" aria-label="Photoshop logo">
+              <img class="skill-logo" src="images/photoshop-logo-real.svg" alt="Photoshop logo" />
+            </div>
+            <div class="skill-item skill-id" aria-label="InDesign logo">
+              <img class="skill-logo" src="images/indesign-logo-real.svg" alt="InDesign logo" />
+            </div>
+            <div class="skill-item skill-ae" aria-label="After Effects logo">
+              <img class="skill-logo" src="images/aftereffects-logo-real.svg" alt="After Effects logo" />
+            </div>
+            <div class="skill-item skill-pr" aria-label="Premiere Pro logo">
+              <img class="skill-logo" src="images/premierepro-logo-real.svg" alt="Premiere Pro logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section contact-cta reveal">
+      <div class="contact-container">
+    <h2>Contact Me</h2>
+
+    <form action="https://formspree.io/f/mlgzngvb" method="POST">
+      
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </div>
+    </section>
+  </main>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

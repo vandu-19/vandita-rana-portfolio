@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details - Vandita Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Grotesk:wght@500;600;700;800;900&family=Satoshi:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .project-detail-section {
+      padding: 80px 0;
+    }
+
+    .project-detail-header {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .project-detail-header h1 {
+      font-family: 'Clash Grotesk', sans-serif;
+      font-size: clamp(48px, 5vw, 80px);
+      line-height: 1.1;
+      margin: 0;
+      color: #FFB6C1;
+    }
+
+    .project-detail-header .category {
+      color: #FFB6C1;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 16px;
+    }
+
+    .detail-project {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+      margin-bottom: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .detail-project:nth-child(even) {
+      direction: rtl;
+    }
+
+    .detail-project:nth-child(even) > * {
+      direction: ltr;
+    }
+
+    .detail-project-image {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .detail-project-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .detail-project-content {
+      padding: 20px 0;
+    }
+
+    .detail-project-content h2 {
+      font-family: 'Clash Grotesk', sans-serif;
+      font-size: clamp(36px, 4vw, 64px);
+      line-height: 1.1;
+      margin: 0 0 16px 0;
+      color: #FFB6C1;
+    }
+
+    .detail-project-content .project-type {
+      color: #FFB6C1;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+
+    .detail-project-content p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #FAF3E0;
+      margin: 16px 0;
+    }
+
+    .detail-project-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+    }
+
+    .detail-project-content ul li {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #FAF3E0;
+      margin: 12px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .detail-project-content ul li:before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #FFB6C1;
+    }
+
+    .back-link {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      display: inline-block;
+    }
+
+    .back-link a {
+      color: #FFB6C1;
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: color var(--transition);
+    }
+
+    .back-link a:hover {
+      color: #FFB6C1;
+    }
+
+    @media (max-width: 768px) {
+      .detail-project {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .detail-project:nth-child(even) {
+        direction: ltr;
+      }
+
+      .project-detail-section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <header class="topbar" id="topbar">
+    <div class="shell">
+      <div class="logo"> <img src="images/Vr logo.png" alt="Vandita Logo" /> Vandita Rana </div>
+      <nav class="nav-links">
+        <a href="index.html#projects">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="project-detail-section">
+      <div class="project-detail-header">
+        <h1>Project Showcase</h1>
+        <p class="category">Detailed Case Studies</p>
+      </div>
+
+      <!-- Project 1: Vector Art -->
+      <div class="detail-project reveal">
+        <div class="detail-project-image">
+          <img src="images/Vandita_Rana_4811_A2.jpg" alt="Vector Art Project" />
+        </div>
+        <div class="detail-project-content">
+          <h2>Vector Art</h2>
+          <span class="project-type">Graphic Design</span>
+          <p>A sophisticated exploration into the realm of precision vector illustration, where geometric forms meet refined typography. This project demonstrates the power of minimalist design combined with strategic visual hierarchy.</p>
+          <p><strong>Project Objectives:</strong></p>
+          <ul>
+            <li>Create bold visual narratives through minimalist digital art</li>
+            <li>Develop a restrained yet impactful color palette</li>
+            <li>Showcase meticulous attention to typographic detail</li>
+            <li>Establish scalable design patterns for brand consistency</li>
+          </ul>
+          <p><strong>Tools Used:</strong> Adobe Illustrator, Figma</p>
+        </div>
+      </div>
+
+      <!-- Project 2: Style Tile -->
+      <div class="detail-project reveal">
+        <div class="detail-project-image">
+          <img src="images/Style_Tile.png" alt="Style Tile Project" />
+        </div>
+        <div class="detail-project-content">
+          <h2>Style Tile</h2>
+          <span class="project-type">Brand Identity</span>
+          <p>A comprehensive visual system that serves as the foundation for cohesive brand expression across all digital touchpoints. This style tile establishes clear guidelines for color palettes, typography hierarchies, and component states.</p>
+          <p><strong>Key Deliverables:</strong></p>
+          <ul>
+            <li>Detailed color palette with accessibility compliance</li>
+            <li>Typography scale with hierarchy specifications</li>
+            <li>Component state definitions and interactions</li>
+            <li>Responsive design adaptation guidelines</li>
+          </ul>
+          <p><strong>Tools Used:</strong> Figma, Adobe InDesign</p>
+        </div>
+      </div>
+
+      <!-- Project 3: Studio Identity -->
+      <div class="detail-project reveal">
+        <div class="detail-project-image">
+          <img src="images/UHN Design system.png" alt="Studio Identity Project" />
+        </div>
+        <div class="detail-project-content">
+          <h2>Studio Identity</h2>
+          <span class="project-type">Visual System</span>
+          <p>An extensible design system engineered for scalability across enterprise applications while maintaining visual refinement and accessibility standards. This system provides a robust foundation for consistent design implementation.</p>
+          <p><strong>System Components:</strong></p>
+          <ul>
+            <li>Modular component library with variant specifications</li>
+            <li>Accessibility standards and WCAG compliance guidelines</li>
+            <li>Motion and animation design patterns</li>
+            <li>Responsive breakpoint specifications and rules</li>
+          </ul>
+          <p><strong>Tools Used:</strong> Figma, Adobe Creative Suite</p>
+        </div>
+      </div>
+
+      <!-- Project 4: Truvvoye Wireframe Interface -->
+      <div class="detail-project reveal">
+        <div class="detail-project-image">
+          <img src="images/Homepage wireframe.png" alt="Truvvoye Wireframe Interface" />
+        </div>
+        <div class="detail-project-content">
+          <h2>Truvvoye Wireframe Interface</h2>
+          <span class="project-type">Web Design</span>
+          <p>High-fidelity interface wireframes prioritizing user flow and information hierarchy. Detailed specifications for responsive behavior and interactive states ensure intuitive navigation across all devices and user scenarios.</p>
+          <p><strong>Design Specifications:</strong></p>
+          <ul>
+            <li>Complete user journey mapping and flows</li>
+            <li>Wireframe annotations and interaction notes</li>
+            <li>Responsive layout breakpoints and grid systems</li>
+            <li>State diagrams and conditional rendering</li>
+          </ul>
+          <p><strong>Tools Used:</strong> Figma, Adobe XD</p>
+        </div>
+      </div>
+
+      <div class="back-link">
+        <a href="index.html#projects">← Back to Portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
