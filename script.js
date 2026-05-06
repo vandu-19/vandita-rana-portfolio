@@ -43,13 +43,13 @@ const projectData = {
     title: 'Studio Identity',
     category: 'Visual system',
     description: 'An extensible design system with modular components, accessibility standards, and motion guidelines. Built for scalability across enterprise applications while maintaining refined visual coherence.',
-    image: 'images/UHN Design system.png'
+    image: 'images/uhn_design_system.png'
   },
   4: {
     title: 'Truvvoye Wireframe Interface',
     category: 'Web design',
     description: 'High-fidelity interface wireframes prioritizing user flow and information hierarchy. Detailed specifications for responsive behavior and interactive states ensure intuitive navigation across all devices.',
-    image: 'images/Homepage wireframe.png'
+    image: 'images/homepage_wireframe.png'
   }
 };
 
